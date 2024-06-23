@@ -1,159 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Threads</title>
-  <link rel="stylesheet" href="profile.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <div class="sidebar">
-    <img src="../icon/azv.png" alt="Logo">
-    <a href="../trang-chu/trang-chu.html">Home</a>
-    <a href="#news">Search</a>
-    <a href="/thong-bao/thong-bao.html">Notification</a>
-    <a class="active" href="../profile/profile.html">Profile</a>
-    <a href="#setting">Setting</a>
-  </div>
-  <div class="header">
-    <div class="banner">
-      <img src="../icon/azv.png" id="threadlogo" alt="Thread Logo">
+    <div class="sidebar">
+        <img src="../icon/azv.png" alt="Logo">
+        <a href="../trang-chu/trang-chu.html">Home</a>
+        <a href="#news">Search</a>
+        <a href="/thong-bao/thong-bao.html">Notification</a>
+        <a class="active" href="../profile/profile.html">Profile</a>
+        <a href="#setting">Setting</a>
     </div>
-    <!-- User Title Information-->
-    <div class="user-info-main">
-      <div class="user-info-div">
-        <div class="user-name">
-          <h1>Chris Tucker</h1>
+    <div class="main-content">
+        <div class="profile-container">
+            <div class="profile-header">
+                <div class="profile-picture">
+                    <img src="../icon/profile.jpg" alt="Profile Picture">
+                </div>
+                <div class="profile-details">
+                    <h1>Gia Khanh</h1>
+                    <h2>khanhgia1801</h2>
+                    <div class="followers">
+                        <img src="https://anhanime.com/wp-content/uploads/2022/05/A%CC%89nh-Anime-chibi-nam-7.jpg" alt="Follower 1">
+                        <img src="https://anhanime.com/wp-content/uploads/2022/05/A%CC%89nh-Anime-chibi-nam-7.jpg" alt="Follower 2">
+                        <p>12 người theo dõi</p>
+                    </div>
+                    <button>Chỉnh sửa trang cá nhân</button>
+                </div>
+            </div>
+            <div class="profile-tabs">
+                <button class="tab-link active" onclick="openTab(event, 'threads')">Thread</button>
+                <button class="tab-link" onclick="openTab(event, 'replies')">Thread trả lời</button>
+                <button class="tab-link" onclick="openTab(event, 'reposts')">Bài đăng lại</button>
+            </div>
+            <div id="threads" class="tab-content active">
+                <p>Bắt đầu tạo thread đầu tiên của bạn</p>
+            </div>
+            <div id="replies" class="tab-content">
+                <p>Chưa có trả lời nào</p>
+            </div>
+            <div id="reposts" class="tab-content">
+                <p>Chưa có bài đăng lại nào</p>
+            </div>
         </div>
-        <div class="user-info">
-          <h5>christucker</h5>
-          <button>threads.net</button>
-        </div>
-      </div>
-      <div class="user-logo">
-        <i class="fa-solid fa-circle-check"></i>
-        <img src="../icon/ctprofile.jpg" alt="User Logo" />
-      </div>
     </div>
-    <!-- User Title Information END-->
-
-    <!-- User Bio-->
-    <div class="user-bio">
-      <p>
-        Christopher Tucker is an American stand-up comedian and actor. <br />
-        Tucker made his debut in 1992 as a stand-up performer on the HBO
-        <br />
-        comedy series Def Comedy Jam
-      </p>
-    </div>
-    <!-- User Bio END-->
-
-    <!-- Followers Count-->
-    <div class="follower-bio">
-      <div>
-        <a href="">5M followers </a>
-        <a id="a-links" href="https://www.instagram.com/christucker">
-          www.christucker.com</a>
-      </div>
-      <div class="follower-bio-logo">
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-solid fa-ellipsis"></i>
-      </div>
-    </div>
-    <!-- Followers Count END-->
-    <!-- Threads/Replies -->
-    <div class="threads-replies">
-      <button class="threads">Threads</button>
-      <button class="replies">Replies</button>
-    </div>
-    <!-- Threads/Replies END-->
-
-    <div class="thread-main">
-      <div class="thread-container">
-        <div class="thread-profile-logo">
-          <img src="../icon/ctprofile.jpg" alt="Profile Logo" />
-        </div>
-        <div class="thread-title">
-          <div class="thread-name">
-            <a href="https://www.instagram.com/christucker">Chris Tucker</a>
-            <i class="fa-solid fa-circle-check"></i>
-          </div>
-          <div class="thread-time">
-            <h3>30m</h3>
-            <i class="fa-solid fa-ellipsis"></i>
-          </div>
-        </div>
-      </div>
-      <div class="thread-posts">
-        <h1>Cheers</h1>
-        <img src="../icon/ctucker.jpg" alt="Post Image" />
-        <div class="interaction">
-          <i class="fa-regular fa-heart"></i>
-          <i class="fa-regular fa-comment"></i>
-          <i class="fa-solid fa-retweet"></i>
-          <i class="fa-regular fa-paper-plane"></i>
-        </div>
-      </div>
-      <div class="interaction-2">
-        <a href="">85 replies</a>
-        <a href="">193,342 likes</a>
-      </div>
-    </div>
-    <!-- Threads/Replies END-->
-    <!-- Threads/Replies-->
-    <div class="thread-main">
-      <div class="thread-container">
-        <div class="thread-profile-logo">
-          <img src="../icon/ctprofile.jpg" alt="Profile Logo" />
-        </div>
-        <div class="thread-title">
-          <div class="thread-name">
-            <a id="a-links" href="https://www.instagram.com/christucker">Chris Tucker</a>
-            <i class="fa-solid fa-circle-check"></i>
-          </div>
-          <div class="thread-time">
-            <h3>2h</h3>
-            <i class="fa-solid fa-ellipsis"></i>
-          </div>
-        </div>
-      </div>
-      <div class="thread-posts">
-        <h1>
-          On set with <span>@CharlieSheen</span> Shooting for #MoneyTalks
-        </h1>
-        <img src="../icon/pic2.jpg" alt="Post Image" />
-        <div class="interaction">
-          <i class="fa-regular fa-heart"></i>
-          <i class="fa-regular fa-comment"></i>
-          <i class="fa-solid fa-retweet"></i>
-          <i class="fa-regular fa-paper-plane"></i>
-        </div>
-      </div>
-      <div class="interaction-2">
-        <a href="">25 replies</a>
-        <a href="">32,342 likes</a>
-      </div>
-
-      <div class="replies-post">
-        <div class="replies-post-title">
-          <h1>No replies yet.</h1>
-        </div>
-      </div>
-    </div>
-    <!-- Threads/Replies END-->
-  </div>
-
-  <div class="qrcode">
-    <img src="../icon/qrcode.png" id="qrcode-img" alt="QR Code" />
-  </div>
-
-  <script src="profile.js"></script>
+    <script src="profile.js"></script>
 </body>
-
 </html>
