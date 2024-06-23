@@ -1,0 +1,48 @@
+body {
+    background-color: black;
+    margin: 0;
+
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 10%;
+    background-color: black;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+
+  .sidebar>img {
+    width: 80%;
+    margin: 20px 10%;
+  }
+
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: #55555563;
+    color: white;
+  }
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    width: 90%;
+  }
