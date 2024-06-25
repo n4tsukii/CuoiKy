@@ -20,14 +20,14 @@
         <div class="profile-container">
             <div class="profile-header">
                 <div class="profile-picture">
-                    <img src="../icon/profile.jpg" alt="Profile Picture">
+                    <img src="../icon/ctprofile.jpg" alt="Profile Picture">
                 </div>
                 <div class="profile-details">
                     <h1>Gia Khanh</h1>
                     <h2>khanhgia1801</h2>
                     <div class="followers">
-                        <img src="https://anhanime.com/wp-content/uploads/2022/05/A%CC%89nh-Anime-chibi-nam-7.jpg" alt="Follower 1">
-                        <img src="https://anhanime.com/wp-content/uploads/2022/05/A%CC%89nh-Anime-chibi-nam-7.jpg" alt="Follower 2">
+                        <img src="../icon/follower1.jpg" alt="Follower 1">
+                        <img src="../icon/follower2.jpg" alt="Follower 2">
                         <p>12 người theo dõi</p>
                     </div>
                     <button>Chỉnh sửa trang cá nhân</button>
@@ -39,13 +39,169 @@
                 <button class="tab-link" onclick="openTab(event, 'reposts')">Bài đăng lại</button>
             </div>
             <div id="threads" class="tab-content active">
-                <p>Bắt đầu tạo thread đầu tiên của bạn</p>
+                <!-- Thread content based on the provided image -->
+                <div class="thread-reply">
+                    <div class="thread-reply-header">
+                        <img src="../icon/benjamintrann.jpg" alt="User">
+                        <a href="https://www.instagram.com/benjamintrann" target="_blank">benjamintrann</a>
+                        <span>28/05/2024</span>
+                    </div>
+                    <p>Đè Cao ra tay với phụ nữ là một little bitch ass.
+                    <br>Nhưng quả kia làm mẹ kiểu gì vác con lên cao mặt giựt tóc như thế có biết ảnh hưởng đến tâm lý đứa trẻ như nào ko?</p>
+                    <div class="thread-reply-footer">
+                        <i class="fa-regular fa-heart" onclick="toggleLike(this)"></i>
+                        <span>222</span>
+                        <i class="fa-regular fa-comment" onclick="toggleComment(this)"></i>
+                        <i class="fa-solid fa-retweet" onclick="toggleRetweet(this)"></i>
+                    </div>
+                </div>
+                <div class="thread-reply">
+                    <div class="thread-reply-header">
+                        <img src="../icon/benjamintrann.jpg" alt="User">
+                        <a href="https://www.instagram.com/benjamintrann" target="_blank">benjamintrann</a>
+                        <span>26/05/2024</span>
+                    </div>
+                    <p>Mình và mẹ mới quan hệ cũng không tốt lắm. Nhưng ai ra tay tương tác với mẹ mình cũng ko biết sẽ làm gì 😭👊
+                    <br>P/s: đính chính chỉ nói về một sự kiện này thôi nhé ko nói đến các vụ cơm bữa</p>
+                    <div class="thread-reply-footer">
+                        <i class="fa-regular fa-heart" onclick="toggleLike(this)"></i>
+                        <span>351</span>
+                        <i class="fa-regular fa-comment" onclick="toggleComment(this)"></i>
+                        <i class="fa-solid fa-retweet" onclick="toggleRetweet(this)"></i>
+                    </div>
+                </div>
+                <div class="thread-reply">
+                    <div class="thread-reply-header">
+                        <img src="../icon/benjamintrann.jpg" alt="User">
+                        <a href="https://www.instagram.com/benjamintrann" target="_blank">benjamintrann</a>
+                        <span>02/05/2024</span>
+                    </div>
+                    <p>Làm người lớn hay trẻ con vui hơn?</p>
+                    <div class="thread-reply-footer">
+                        <i class="fa-regular fa-heart" onclick="toggleLike(this)"></i>
+                        <span>215</span>
+                        <i class="fa-regular fa-comment" onclick="toggleComment(this)"></i>
+                        <i class="fa-solid fa-retweet" onclick="toggleRetweet(this)"></i>
+                    </div>
+                </div>
+                <div class="thread-reply">
+                    <div class="thread-reply-header">
+                        <img src="../icon/benjamintrann.jpg" alt="User">
+                        <a href="https://www.instagram.com/benjamintrann" target="_blank">benjamintrann</a>
+                        <span>29/04/2024</span>
+                    </div>
+                    <p>Ngắm hoa, cái nghiện</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSytA41qRg2fK81-4O0qVkao4cPOksqDduI8A&s" alt="Ngắm hoa" style="width:100%; max-width:500px;">
+                    <div class="thread-reply-footer">
+                        <i class="fa-regular fa-heart" onclick="toggleLike(this)"></i>
+                        <span>709</span>
+                        <i class="fa-regular fa-comment" onclick="toggleComment(this)"></i>
+                        <i class="fa-solid fa-retweet" onclick="toggleRetweet(this)"></i>
+                    </div>
+                </div>
             </div>
             <div id="replies" class="tab-content">
-                <p>Chưa có trả lời nào</p>
+                <div class="thread-reply">
+                    <div class="thread-reply-header">
+                        <img src="../icon/user1.jpg" alt="User">
+                        <a href="https://www.instagram.com/scott.ngoclong" target="_blank">scott.ngoclong</a>
+                        <span>02/05/2024</span>
+                    </div>
+                    <p>Người lớn có tiền thì vui</p>
+                    <div class="thread-reply-footer">
+                        <i class="fa-regular fa-heart" onclick="toggleLike(this)"></i>
+                        <span>1</span>
+                        <i class="fa-regular fa-comment" onclick="toggleComment(this)"></i>
+                        <i class="fa-solid fa-retweet" onclick="toggleRetweet(this)"></i>
+                    </div>
+                </div>
+                <div class="thread-reply">
+                    <div class="thread-reply-header">
+                        <img src="../icon/user2.jpg" alt="User">
+                        <a href="https://www.instagram.com/benjamintrann" target="_blank">benjamintrann</a>
+                        <span>02/05/2024</span>
+                    </div>
+                    <p>Fact</p>
+                    <div class="thread-reply-footer">
+                        <i class="fa-regular fa-heart" onclick="toggleLike(this)"></i>
+                        <span>1</span>
+                        <i class="fa-regular fa-comment" onclick="toggleComment(this)"></i>
+                        <i class="fa-solid fa-retweet" onclick="toggleRetweet(this)"></i>
+                    </div>
+                </div>
+                <div class="thread-reply">
+                    <div class="thread-reply-header">
+                        <img src="../icon/user2.jpg" alt="User">
+                        <a href="https://www.instagram.com/benjamintrann" target="_blank">benjamintrann</a>
+                        <span>02/05/2024</span>
+                    </div>
+                    <p>Nhớ 😢</p>
+                    <div class="thread-reply-footer">
+                        <i class="fa-regular fa-heart" onclick="toggleLike(this)"></i>
+                        <span>1</span>
+                        <i class="fa-regular fa-comment" onclick="toggleComment(this)"></i>
+                        <i class="fa-solid fa-retweet" onclick="toggleRetweet(this)"></i>
+                    </div>
+                </div>
+                <div class="thread-reply">
+                    <div class="thread-reply-header">
+                        <img src="../icon/user3.jpg" alt="User">
+                        <a href="https://www.instagram.com/scott.ngoclong" target="_blank">scott.ngoclong</a>
+                        <span>02/05/2024</span>
+                    </div>
+                    <p>Phụ thuộc nè</p>
+                    <div class="thread-reply-footer">
+                        <i class="fa-regular fa-heart" onclick="toggleLike(this)"></i>
+                        <span>1</span>
+                        <i class="fa-regular fa-comment" onclick="toggleComment(this)"></i>
+                        <i class="fa-solid fa-retweet" onclick="toggleRetweet(this)"></i>
+                    </div>
+                </div>
             </div>
             <div id="reposts" class="tab-content">
-                <p>Chưa có bài đăng lại nào</p>
+                <div class="thread-reply">
+                    <div class="thread-reply-header">
+                        <img src="../icon/user4.jpg" alt="User">
+                        <a href="https://www.instagram.com/benjamintrann" target="_blank">benjamintrann</a>
+                        <span>02/05/2024</span>
+                    </div>
+                    <p>Thật buồn cho ai chưa đi Nhật</p>
+                    <div class="thread-reply-footer">
+                        <i class="fa-regular fa-heart" onclick="toggleLike(this)"></i>
+                        <span>1</span>
+                        <i class="fa-regular fa-comment" onclick="toggleComment(this)"></i>
+                        <i class="fa-solid fa-retweet" onclick="toggleRetweet(this)"></i>
+                    </div>
+                </div>
+                <div class="thread-reply">
+                    <div class="thread-reply-header">
+                        <img src="../icon/user5.jpg" alt="User">
+                        <a href="https://www.instagram.com/benjamintrann" target="_blank">benjamintrann</a>
+                        <span>02/05/2024</span>
+                    </div>
+                    <p>Nhật Bản, vẻ đẹp tinh tế và thanh bình</p>
+                    <div class="thread-reply-footer">
+                        <i class="fa-regular fa-heart" onclick="toggleLike(this)"></i>
+                        <span>1</span>
+                        <i class="fa-regular fa-comment" onclick="toggleComment(this)"></i>
+                        <i class="fa-solid fa-retweet" onclick="toggleRetweet(this)"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="thread-reply">
+                <div class="thread-reply-header">
+                    <img src="../icon/user5.jpg" alt="User">
+                    <a href="https://www.instagram.com/benjamintrann" target="_blank">benjamintrann</a>
+                    <span>02/05/2024</span>
+                </div>
+                <p>Nhật Bản, vẻ đẹp tinh tế và thanh bình</p>
+                <div class="thread-reply-footer">
+                    <i class="fa-regular fa-heart" onclick="toggleLike(this)"></i>
+                    <span>1</span>
+                    <i class="fa-regular fa-comment" onclick="toggleComment(this)"></i>
+                    <i class="fa-solid fa-retweet" onclick="toggleRetweet(this)"></i>
+                </div>
+            </div>
             </div>
         </div>
     </div>
