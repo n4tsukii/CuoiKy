@@ -11,11 +11,11 @@
     <body>
         <div class="sidebar">
             <img src="../icon/azv.png" alt="">
-            <a class="active" href="/trang-chu/trang-chu.html">Home</a>
-            <a href="/search/search.html">Search</a>
-            <a href="/thong-bao/thong-bao.html">Notifcation</a>
-            <a href="../profile/profile.html">Profile</a>
-            <a href="#setting">Setting</a>
+            <a class="active" href="/trang-chu/trang-chu.html">Trang chủ</a>
+            <a href="/search/search.html">Tìm Kiếm</a>
+            <a href="/thong-bao/thong-bao.html">Thông báo</a>
+            <a href="../profile/profile.html">Trang cá nhân</a>
+            <a href="../contact/contact.html">Liên Hệ</a>
         </div>
 
         <div class="content">
@@ -31,20 +31,56 @@
 
                 <div class="post-area">
                     <div class="upload-thread">
-                        <img class="avatar" src="" alt="">
+                        <img class="avatar" src="../icon/profile.jpg" alt="">
                         <textarea class="input" placeholder="What's on your mind?" cols="40" rows="1"></textarea>
                         <button class="post-button">Đăng</button>
                     </div>
                     <div class="post">
                         <div class="post-header">
-                            <img class="avatar" src="" alt="">
+                            <img class="avatar" src="https://scontent.fhan5-9.fna.fbcdn.net/v/t39.30808-6/334610686_2427927710707816_2049765530158021823_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeG4PKJHzOLTR5_BCB-WVOMclqkgX6G0JL6WqSBfobQkvgWwfasOti3XWtNG-3W-5PsPkEVAJxo38tQ9A2FQdrUw&_nc_ohc=7jd0CoVjgJwQ7kNvgHIR9jg&_nc_ht=scontent.fhan5-9.fna&oh=00_AYDM6me4YSoi2hYg3ChnBlUda9SWPMT-jpgLDYOXdDcckg&oe=6681FAF8" alt="">
                             <div class="post-content">
-                                <h3 class="username">Nguyễn Văn A</h3>
-                                <p>Đây là một bài viết mẫu. Các bài viết do người dùng tạo ra sẽ xuất hiện ở đây.</p>
+                                <h3 class="username">n4tsuki</h3>
+                                <p>Bộ sofa này trông thật tuyệt!!</p>
                             </div>
                         </div>
                         <img class="post-image"
                             src="https://plus.unsplash.com/premium_photo-1661765778256-169bf5e561a6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="">
+                        <div class="post-footer">
+                            <i class="fa-regular fa-heart" onclick="toggleLike(this)"></i>
+                            <span>20</span>
+                            <i class="fa-regular fa-comment" onclick="toggleComment(this)"></i>
+                            <i class="fa-solid fa-retweet" onclick="toggleRetweet(this)"></i>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="post-header">
+                            <img class="avatar" src="https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                            <div class="post-content">
+                                <h3 class="username">dog_lover</h3>
+                                <p>Tớ thích nấu ăn</p>
+                            </div>
+                        </div>
+                        <img class="post-image"
+                            src="https://plus.unsplash.com/premium_photo-1716113144091-b39ddf3f045a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="">
+                        <div class="post-footer">
+                            <i class="fa-regular fa-heart" onclick="toggleLike(this)"></i>
+                            <span>20</span>
+                            <i class="fa-regular fa-comment" onclick="toggleComment(this)"></i>
+                            <i class="fa-solid fa-retweet" onclick="toggleRetweet(this)"></i>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="post-header">
+                            <img class="avatar" src="https://scontent.fhan5-6.fna.fbcdn.net/v/t39.30808-6/428428267_1145011696660157_4145215062796187705_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHl9QYRf9fHPBIro-gkc-VawmQ8G_XlApfCZDwb9eUCl29WxXhahSMuXO19ElQvBNP5Z9Q7vR8LDjo5Q36r1XDG&_nc_ohc=CsEd4Ba3BokQ7kNvgHU4uRd&_nc_ht=scontent.fhan5-6.fna&oh=00_AYAeSzEq50hOOPfoZ0Xn1D3LDztWroabmJYjSk1czVJL-w&oe=6681F6C5" alt="">
+                            <div class="post-content">
+                                <h3 class="username">tad_orange</h3>
+                                <p>love the cozy place</p>
+                            </div>
+                        </div>
+                        <img class="post-image"
+                            src="https://images.unsplash.com/photo-1533327325824-76bc4e62d560?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             alt="">
                         <div class="post-footer">
                             <i class="fa-regular fa-heart" onclick="toggleLike(this)"></i>

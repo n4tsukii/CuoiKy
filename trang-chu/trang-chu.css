@@ -155,9 +155,14 @@ div.post {
   width: 687px;
 }
 
+div.post:not(:first-child) {
+  border-top: 1px rgba(255, 255, 255, 0.238) solid;
+  margin-top: 10px;
+}
+
 div.post-header {
   width: 100%;
-  padding: 0 10px;
+  padding: 5px 10px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -165,6 +170,7 @@ div.post-header {
 }
 
 div.post-content {
+  width: 85%;
   padding: 10px 0;
   text-align: left;
 }
