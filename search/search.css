@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 10%;
+  background-color: black;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+
+.sidebar>img {
+  width: 80%;
+  margin: 20px 10%;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: white;
+  color: black;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #55555563;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  width: 90%;
+}
+
+div.box {
+  text-align: center;
+  width: 700px;
+  margin: 0 30%;
+  align-items: center;
+  border: 1px rgba(255, 255, 255, 0.238) solid;
+  border-radius: 30px;
+  background-color: #181818;
+}
+
+div.search-bar {
+    width: 80%;
+    height: 40px;
+    margin: 20px 10%;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+div.search-bar>button>i {
+    padding-top: 5px;
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 20px;
+    outline: none;
+}
+
+div.search-bar>input {
+    width: 90%;
+    height: 100%;
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 20px;
+    outline: none;
+}
+
+div.search-history {
+    width: 80%;
+    margin: 20px 10%;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+div.search-history>div.user {
+    display: flex;
+    padding: 10px;
+    
+}
+
+div.search-history>div.user:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.238);
+}
+
+div.user>img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+div.user>div.name {
+    margin-top: 5px;
+    margin-left: 20px;
+    width: 80%;
+    display: block;
+    text-align: left;
+}
+
+div.name>p {
+    padding-bottom: 5px;
+}
+
+div.user>button.follow-btn {
+    width: 20%;
+    background-color: black;
+    border: none;
+    font-size: 17px;
+    color: white;
+    border: 1px rgba(255, 255, 255, 0.238) solid;
+    border-radius: 10px;
+}

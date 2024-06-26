@@ -1,59 +1,62 @@
 <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Homepage</title>
+        <link rel="stylesheet" href="trang-chu.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="sidebar">
+            <img src="../icon/azv.png" alt="">
+            <a class="active" href="/trang-chu/trang-chu.html">Home</a>
+            <a href="/search/search.html">Search</a>
+            <a href="/thong-bao/thong-bao.html">Notifcation</a>
+            <a href="../profile/profile.html">Profile</a>
+            <a href="#setting">Setting</a>
+        </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Chu Page</title>
-    <link rel="stylesheet" href="trang-chu.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-
-<body>
-    <div class="sidebar">
-        <img src="../icon/azv.png" alt="">
-        <a class="active" href="/trang-chu/trang-chu.html">Home</a>
-        <a href="#news">Search</a>
-        <a href="/thong-bao/thong-bao.html">Notifcation</a>
-        <a href="../profile/profile.html">Profile</a>
-        <a href="#setting">Setting</a>
-    </div>
-
-    <div class="content">
-        <div class="box">
-            <div class="option-panel">
-                <button class="dropbtn">Dành cho bạn</button>
-                <div class="options">
-                    <a href="#">Dành cho bạn</a>
-                    <a href="#">Đang theo dõi</a>
-                    <a href="#">Đã Thích</a>
-                </div>
-            </div>
-            
-            <div class = "post-area">
-                <div class="upload-thread">
-                    <img class="avatar" src="" alt="">
-                    <textarea class="input" placeholder="What's on your mind?" cols = "40" rows="1"></textarea> 
-                    <button class="post-button">Đăng</button>
-                </div>
-                <div class="post">
-                    <div class="post-header">
-                        <img class="avatar" src="" alt="">
-                        <div class="post-content">
-                            <h3 class="username">Nguyễn Văn A</h3>
-                            <p>Đây là một bài viết mẫu. Các bài viết do người dùng tạo ra sẽ xuất hiện ở đây.</p>
-                        </div>
+        <div class="content">
+            <div class="box">
+                <div class="option-panel">
+                    <button class="dropbtn">Dành cho bạn</button>
+                    <div class="options">
+                        <a href="#">Dành cho bạn</a>
+                        <a href="#">Đang theo dõi</a>
+                        <a href="#">Đã Thích</a>
                     </div>
-                    <img class="post-image" src ="https://plus.unsplash.com/premium_photo-1661765778256-169bf5e561a6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt = "">
-                    <div class="post-footer">
-                        <i class="fa-regular fa-heart" onclick="toggleLike(this)"></i>
-                        <span>20</span>
-                        <i class="fa-regular fa-comment" onclick="toggleComment(this)"></i>
-                        <i class="fa-solid fa-retweet" onclick="toggleRetweet(this)"></i>
+                </div>
+
+                <div class="post-area">
+                    <div class="upload-thread">
+                        <img class="avatar" src="" alt="">
+                        <textarea class="input" placeholder="What's on your mind?" cols="40" rows="1"></textarea>
+                        <button class="post-button">Đăng</button>
+                    </div>
+                    <div class="post">
+                        <div class="post-header">
+                            <img class="avatar" src="" alt="">
+                            <div class="post-content">
+                                <h3 class="username">Nguyễn Văn A</h3>
+                                <p>Đây là một bài viết mẫu. Các bài viết do người dùng tạo ra sẽ xuất hiện ở đây.</p>
+                            </div>
+                        </div>
+                        <img class="post-image"
+                            src="https://plus.unsplash.com/premium_photo-1661765778256-169bf5e561a6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="">
+                        <div class="post-footer">
+                            <i class="fa-regular fa-heart" onclick="toggleLike(this)"></i>
+                            <span>20</span>
+                            <i class="fa-regular fa-comment" onclick="toggleComment(this)"></i>
+                            <i class="fa-solid fa-retweet" onclick="toggleRetweet(this)"></i>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <script src="trang-chu.js"></script>
-</body>
+        <script src="trang-chu.js"></script>
+    </body>
+
 </html>

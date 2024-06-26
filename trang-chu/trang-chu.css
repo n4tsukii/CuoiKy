@@ -61,12 +61,13 @@ div.box {
   width: 700px;
   margin: 0 30%;
   align-items: center;
+  background-color: #181818;
   border: 1px rgba(255, 255, 255, 0.238) solid;
   border-radius: 30px;
 }
 
 .dropbtn {
-  background-color: black;
+  background-color: #181818;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -83,7 +84,7 @@ div.option-panel {
 div.options {
   display: none;
   position: absolute;
-  background-color: black;
+  background-color: #181818;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   border-radius: 10%;
@@ -137,7 +138,7 @@ textarea.input {
   font-size: 20px;
   text-align: center;
   border: none;
-  background-color: black;
+  background-color: #181818;
   color: white;
   resize: none;
 }
@@ -145,7 +146,7 @@ textarea.input {
 .post-button {
   width: 10%;
   border: none;
-  background-color: black;
+  background-color: #181818;
   color: white;
   font-size: 20px;
 }
