@@ -122,7 +122,6 @@ div.upload-thread {
   padding: 0 10px;
   box-sizing: border-box;
   padding-bottom: 10px;
-  border-bottom: 1px rgba(255, 255, 255, 0.238) solid;
 }
 
 img.avatar {
@@ -152,12 +151,12 @@ textarea.input {
 }
 
 div.post {
-  width: 687px;
+  width: 700px;
 }
 
-div.post:not(:first-child) {
-  border-top: 1px rgba(255, 255, 255, 0.238) solid;
-  margin-top: 10px;
+div.post-area>div:not(:last-child) {
+  border-bottom: 1px rgba(255, 255, 255, 0.238) solid;
+  padding-bottom: 10px;
 }
 
 div.post-header {
@@ -184,7 +183,7 @@ img.post-image {
 }
 
 .post-footer {
-  padding-left: 20px;
+  margin-left: 20px;
   text-align: left;
   font-size: 20px;
 }
