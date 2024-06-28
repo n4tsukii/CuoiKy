@@ -47,7 +47,7 @@ body {
 
 
 div.content {
-  margin-left: 200px;
+  margin-left: 0 auto;
   padding: 1px 16px;
   width: 90%;
 }
@@ -81,5 +81,5 @@ form>button {
   padding: 5px 10px;
   font-size: 20px;
   border: none;
-  border-radius: 2px;
+  border-radius: 5px;
 }

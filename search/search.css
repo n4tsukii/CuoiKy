@@ -29,7 +29,6 @@ body {
   margin: 20px 10%;
 }
 
-/* Sidebar links */
 .sidebar a {
   display: block;
   color: white;
@@ -37,21 +36,18 @@ body {
   text-decoration: none;
 }
 
-/* Active/current link */
 .sidebar a.active {
   background-color: white;
   color: black;
 }
 
-/* Links on mouse-over */
 .sidebar a:hover:not(.active) {
   background-color: #55555563;
   color: white;
 }
 
-/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 div.content {
-  margin-left: 200px;
+  margin: 0 auto;
   padding: 1px 16px;
   width: 90%;
 }
@@ -131,6 +127,11 @@ div.user>div.name {
 
 div.name>p {
     padding-bottom: 5px;
+}
+
+.username>a {
+  font-weight: bold;
+  text-decoration: none;
 }
 
 div.user>button.follow-btn {
